@@ -4,9 +4,7 @@ const pr = document.getElementById('pr')
 const workout = document.getElementById('workouts')
 const proof = document.getElementById('fileInput')
 
-const displayPr = document.getElementById('Personal_Records')
-
-
+const displayPr = document.getElementById('personal-records') // Corrected ID
 
 pr.addEventListener('change', checkEnableButton)
 workout.addEventListener('change', checkEnableButton)
@@ -16,11 +14,10 @@ function checkEnableButton () {
   console.log(proof.files.length );
   submitBtn.disabled = !(
       pr.value && 
-      workout.value !== 'Select Workout' &&
+      workout.value !== 'Select workout' && // Corrected text
       proof.files.length > 0
    )
 }
-
 
 submitBtn.addEventListener("click", displayPR);
 
@@ -30,8 +27,4 @@ function displayPR (){
   newDiv.innerHTML= workout.value + ": " + pr.value + "<br>Here's the proof:" + proof.files +"<br><br>"
 
   displayPr.appendChild(newDiv);
-
 }
-
-
-

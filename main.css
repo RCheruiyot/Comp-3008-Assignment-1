@@ -1,4 +1,5 @@
-/* Phone design inpired from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_device_smartphone */
+/* Phone design inspired from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_device_smartphone */
+
 /* The device with borders */
 .smartphone {
   position: relative;
@@ -25,23 +26,34 @@
   border-radius: 10px;
 }
 
-
-/* The screen (or content) of the device */
-.smartphone .content {
-  width: 360px;
-  height: 500px;
-  background: white;
-  position: relative;
-}
-.Personal_Records_Div{
+.personal-records-div {
   border: 5px solid;
   margin: auto;
   width: 70%;
   padding: 27px;
-  margin-top: 140px;
+  margin-top: 50px;
   overflow: auto;
   min-height: 150px;
   max-height: 150px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.add-workout {
+  width: 70%;
+  margin: 0 auto;
+  /* padding: 20px; */
+  margin-top: 0px;
+  text-align: center;
+}
+
+.add-workout label,
+.add-workout select,
+.add-workout input[type="text"],
+.add-workout input[type="file"],
+.add-workout input[type="submit"] {
+  display: block;
+  margin: 10px auto;
 }
 
 .menu{
@@ -67,15 +79,6 @@
 .leaderboard{
   margin-top: -45px;
   margin-left:250px;
-}
-.add_workout{
-  position: absolute;
-  margin: auto;
-  width: 95%;
-  height: 30px;
-  margin-left: -8px;
-  padding: 10px;
-  margin-top: 10px;
 }
 
 .profile_page{
