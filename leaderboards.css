@@ -1,0 +1,181 @@
+/* Phone design inpired from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_device_smartphone */
+/* The device with borders */
+.smartphone {
+    position: relative;
+    width: 360px;
+    height: 640px;
+    margin: auto;
+    border: 16px black solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+  }
+  
+  /* The horizontal line on the top of the device */
+
+  .smartphone {
+    position: relative;
+    width: 360px;
+    height: 640px;
+    margin: auto;
+    border: 16px black solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+    overflow: hidden; /* Make the smartphone container hide overflow */
+}
+
+.smartphone .content {
+    width: 360px;
+    height: 500px;
+    background: white;
+    position: relative;
+    overflow: auto; /* Add overflow: auto to enable scrolling for the content */
+}
+
+.leaderboard-section {
+    max-height: 580px; /* Set a maximum height for the leaderboard content */
+    overflow-y: scroll; /* Enable vertical scrolling for the leaderboard content */
+}
+
+.center-text {
+    text-align: center;
+}
+
+  .menu {
+    border: 5px solid;
+    margin: auto;
+    width: 95%;
+    height: 30px;
+    float: left;
+    margin-left: -8px;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    background: white; /* Add a white background to the menu */
+    z-index: 1; /* Ensure the menu appears above the leaderboard content */
+    overflow: hidden; /* Hide menu overflow */
+}
+  .profile_page{
+    margin-top: -8px;
+    margin-left: 70px;
+  }
+  .groups_page{
+    margin-top: -35px;
+    margin-left: 150px;
+  }
+  .leaderboard{
+    margin-top: -45px;
+    margin-left:250px;
+  }
+
+  .profile_page{
+    cursor: pointer;
+  }
+  .profile_page{
+    cursor: pointer;
+  }
+  .profile_page{
+    cursor: pointer;
+  }
+
+/* 
+#leaderboard-body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+h1 {
+    color: #333;
+}
+
+#leaderboards-filters {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leaderboards-filter-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.leaderboards-filter-label {
+    margin: 0 10px;
+}
+
+#leaderboards-filter-button {
+    padding: 5px;
+    margin: 10px 0;
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#leaderboards-filter-button:hover {
+    background-color: #0056b3;
+}
+
+.leaderboards-leaderboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 20px; */
+}
+
+.leaderboards-profile {
+    display: flex;
+    width: 225px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+}
+
+.leaderboards-profile img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.leaderboards-profile-info {
+    flex: 1;
+}
+
+.leaderboards-profile-info p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.smartphone .content::-webkit-scrollbar {
+    width: 0.2em; /* Adjust as needed */
+}
+.smartphone .content::-webkit-scrollbar-thumb {
+    background-color: #888; /* Adjust to match your background color */
+}
+
+.colour-black {
+    text-decoration: none;
+    background-color: black;
+    color: black;
+}
+
+.colour-black:hover {
+    background-color: black;
+    color: black;
+}
+
+.colour-black:active {
+    background-color: black;
+    color: black;
+}

@@ -3,19 +3,42 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://kit.fontawesome.com/3b8eb9b53b.js" crossorigin="anonymous"></script>
 <head>
-  <title>Gymbuds</title>
+  <title>Gymbuds - Leaderboard</title>
 
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="leaderboards.css" />
 </head>
-<body>
-    <div class="smartphone">
-        <div class="content">
-          
-            
-    
+<body id="leaderboard-body">
+  <div class="smartphone">
+    <section class="leaderboard-section">
+        <h1 class="center-text">Leaderboard</h1>
+        <div id="leaderboards-filters">
+            <div class="leaderboards-filter-group">
+                <label class="leaderboards-filter-label" for="exercise-filter">Filter by Exercise:</label>
+                <select id="exercise-filter">
+                    <option value="all">All</option>
+                    <option value="deadlift">Deadlift</option>
+                    <option value="pushups">Push-ups</option>
+                    <option value="pullups">Pull-ups</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <div class="leaderboards-filter-group">
+                <label class="filter-label" for="group-filter">Filter by Group:</label>
+                <select id="leaderboards-filter-group">
+                    <option value="all">All</option>
+                    <option value="school">School</option>
+                    <option value="family">Family</option>
+                    <option value="work">Work</option>
+                </select>
+            </div>
+            <button id="leaderboards-filter-button">Filter</button>
+        </div>
+        <div id="leaderboards-leaderboard" class="leaderboards-leaderboard">
     
         </div>
+    </section>
     
     
         <div class= "menu">
@@ -25,7 +48,7 @@
           <a href="leaderboard_page.html"><div class = "leaderboard" id = "leaderboard"><i style='font-size:40px' class="fa-solid fa-ranking-star"></i></div></a>
         </div>
       </div>
-    <script src="main.js"></script>
+    <script src="leaderboards.js"></script>
 
 </body>
 </html>
