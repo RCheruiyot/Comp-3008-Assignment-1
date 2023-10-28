@@ -38,7 +38,7 @@
     margin: auto;
     width: 70%;
     padding: 27px;
-    margin-top: 160px;
+    margin-top: 140px;
     overflow: auto;
     min-height: 150px;
     max-height: 150px;
@@ -75,7 +75,7 @@
     height: 30px;
     margin-left: -8px;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .profile_page{
