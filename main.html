@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = "en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/3b8eb9b53b.js" crossorigin="anonymous"></script>
+<head>
+  <title>Gymbuds</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <div class="smartphone">
+    <div class="content">
+      
+      <!-- Profile page div -->
+      <div class = "profile_page_div" id = "profile_page_div">
+          <div class="Personal_Records_Div" id = "Personal_Records" >
+            <h2>Personal Records:</h2>
+          </div>
+      
+          <div class = "add_workout">
+            <h2>Add workout Here:</h2>
+            <label for="workouts">Choose workout:</label>
+            <select id="workouts" name="workouts">
+              <option>Select workout</option>
+              <option>Bench Press</option>
+              <option>DeadLift</option>
+              <option>Pullups</option>
+              <option>Pushups</option>
+              <option>Squats</option>
+            </select><br>
+            <label for="pr">Personal Record:</label>
+            <input type="text" id="pr" name="pr"><br>
+      
+            <label for="fileInput">Upload image or video proof here:</label>
+            <input type="file" id="fileInput" accept="image/*, video/*"><br><br>
+      
+            <input type="submit" id="submit_pr" disabled>
+          </div>
+
+      </div>
+
+
+      <div class= "menu">
+        <a href="main.html"><div class = "profile_page" id = "profile_page"><i style='font-size:40px' class='far'>&#xf2bd;</i></div></a>
+        
+        <a href="groups_page.html"><div class = "groups_page" id = "groups_page"><i style='font-size:40px' class="fa-solid fa-users"></i></div></a>
+        <a href="leaderboard_page.html"><div class = "leaderboard" id = "leaderboard"><i style='font-size:40px' class="fa-solid fa-ranking-star"></i></div></a>
+      </div>
+    </div>
+  </div>
+    <script src="main.js"></script>
+
+</body>
+</html>
