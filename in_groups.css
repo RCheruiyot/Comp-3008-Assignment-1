@@ -1,0 +1,81 @@
+.smartphone {
+    position: relative;
+    width: 360px;
+    height: 640px;
+    margin: auto;
+    border: 16px black solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+    overflow: hidden;
+  }
+  
+  .smartphone .content {
+    width: 360px;
+    height: 500px;
+    background: white;
+    position: relative;
+    overflow: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #friends-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  #friends-list li {
+    display: flex;
+    align-items: center;
+    width: 225px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    padding: 10px;
+    text-align: left;
+    background-color: #f9f9f9;
+  }
+  
+  .add-friends-button {
+    display: block;
+    background-color: #0074d9;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 20px auto;
+    cursor: pointer;
+    width: 225px;
+  }
+  
+  .add-friends-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .smartphone .content::-webkit-scrollbar {
+    width: 0.2em;
+  }
+  
+  .smartphone .content::-webkit-scrollbar-thumb {
+    background-color: #888;
+  }
+
+  .friend-image {
+    max-width: 65px; 
+    max-height: 65px;
+    margin-right: 15px;
+  }
