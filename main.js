@@ -20,11 +20,32 @@ function checkEnableButton () {
 }
 
 submitBtn.addEventListener("click", displayPR);
-
+//To display the personal records
 function displayPR (){
   const newDiv = document.createElement("div");
+  const imageDisplay = document.createElement("img");
 
-  newDiv.innerHTML= workout.value + ": " + pr.value + "<br>Here's the proof:" + proof.files +"<br><br>"
+  //console.log(proof.files[0].name);
+  
+  if (proof.files.length > 0) {
+    var file = proof.files[0];
+    console.log(file.type)
+    if (file.type.startsWith("image/") || file.type.startsWith("video/")) {
+        var reader = new FileReader();
 
+        reader.onload = function(e) {
+            imageDisplay.src = e.target.result;
+            imageDisplay.style.height = "80px";
+            imageDisplay.style.width = "80px";
+            imageDisplay.style.marginRight = "50px";
+
+        };
+
+        reader.readAsDataURL(file);
+    }
+}
+
+  newDiv.innerHTML= workout.value + ": " + pr.value + "<br>Here's the proof: <br>"
+  newDiv.appendChild(imageDisplay);
   displayPr.appendChild(newDiv);
 }
