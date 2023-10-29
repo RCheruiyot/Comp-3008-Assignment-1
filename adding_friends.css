@@ -1,0 +1,123 @@
+/* Phone design */
+.smartphone {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+  overflow: hidden;
+}
+
+.smartphone .content {
+  width: 360px;
+  height: 500px;
+  background: white;
+  position: relative;
+  overflow: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#search-input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#add-button {
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+#add-button:hover {
+  background-color: #0056b3;
+}
+
+#add-button:disabled {
+  background-color: #b5d1f3;
+  cursor: not-allowed;
+}
+
+#requests-list {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+#requests-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 225px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+#requests-list li .user-info {
+  display: flex;
+  align-items: center;
+}
+
+#requests-list li img {
+  margin-right: 10px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+#requests-list li .action-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+#requests-list li .accept,
+#requests-list li .deny {
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+#requests-list li .deny {
+  background-color: #d9534f;
+}
+
+.smartphone .content::-webkit-scrollbar {
+  width: 0.2em;
+}
+
+.smartphone .content::-webkit-scrollbar-thumb {
+  background-color: #888;
+}

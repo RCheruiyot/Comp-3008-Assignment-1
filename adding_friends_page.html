@@ -4,19 +4,34 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://kit.fontawesome.com/3b8eb9b53b.js" crossorigin="anonymous"></script>
-  <title>Gymbuds - Groups</title>
+  <title>Gymbuds - Adding Friends</title>
   <link rel="stylesheet" href="main.css" />
-  <link rel="stylesheet" href="groups.css" />
+  <link rel="stylesheet" href="adding_friends.css" />
 </head>
 
 <body>
   <div class="smartphone">
     <div class="content">
-      <a href="#" id="add-friends-button" class="add-friends-button">Add Friends</a>
-      <h2>Groups</h2>
-      <ul id="groups-list">
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search">
+        <button id="add-button" disabled>Add</button>
+      </div>
+
+      <h2>Requests</h2>
+      <ul id="requests-list">
+        <li>
+          <div class="user-info">
+            <img src="path_to_user_icon" alt="User Icon">
+            <span>UsernameHere</span>
+          </div>
+          <div class="action-buttons">
+            <button class="accept">Accept</button>
+            <button class="deny">Deny</button>
+          </div>
+        </li>
       </ul>
     </div>
+
     <div class="menu">
       <a href="main.html">
         <div class="profile_page" id="profile_page"><i style='font-size:40px' class='far'>&#xf2bd;</i></div>
@@ -29,8 +44,7 @@
       </a>
     </div>
   </div>
-  <script src="groups.js"></script>
-  <script src="main.js"></script>
+  <script src="adding_friends.js"></script>
 </body>
 
 </html>
