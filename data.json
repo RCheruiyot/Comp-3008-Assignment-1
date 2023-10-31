@@ -1,0 +1,55 @@
+{
+  "Groups": {
+    "School": ["GuyL", "GuyA"],
+    "Family": ["GuyB"],
+    "Work": ["GuyC"]
+  },
+  "Friends": {
+    "GuyL": {
+      "name": "GuyL",
+      "lifts": {
+        "bench press": 150,
+        "squat": 200,
+        "deadlift": 250
+      },
+      "profilePicture": "assets/friend1.jpg"
+    },
+    "GuyA": {
+      "name": "GuyA",
+      "lifts": {
+        "squat": 180,
+        "deadlift": 220
+      },
+      "profilePicture": "assets/friend2.jpg"
+    },
+    "GuyB": {
+      "name": "GuyB",
+      "lifts": {
+        "bench press": 160,
+        "squat": 210,
+        "deadlift": 260
+      },
+      "profilePicture": "assets/friend3.jpg"
+    },
+    "GuyC": {
+      "name": "GuyC",
+      "lifts": {
+        "bench press": 140,
+        "squat": 190,
+        "deadlift": 230
+      },
+      "profilePicture": "assets/friend4.jpg"
+    }
+  },
+  "Users": {
+    "GuyD": {
+      "name": "GuyD",
+      "lifts": {
+        "bench press": 170,
+        "squat": 220,
+        "deadlift": 270
+      },
+      "profilePicture": "assets/user1.jpg"
+    }
+  }
+}

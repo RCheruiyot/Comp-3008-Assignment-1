@@ -1,7 +1,7 @@
 const groups = [
-  { groupName: 'School', icon: 'school.png' },
-  { groupName: 'Family', icon: 'family.png' },
-  { groupName: 'Work', icon: 'work.png' },
+  { groupName: 'School'},
+  { groupName: 'Family'},
+  { groupName: 'Work'},
 ];
 
 const groupsList = document.getElementById('groups-list');
@@ -14,17 +14,14 @@ addFriendsButton.addEventListener('click', function () {
 function createGroupElement(group) {
   const groupElement = document.createElement('li');
   groupElement.classList.add('group-item');
-  const groupIcon = document.createElement('img');
-  groupIcon.src = group.icon;
   const groupName = document.createElement('div');
   groupName.classList.add('group-name');
   groupName.innerHTML = group.groupName;
 
-  groupElement.appendChild(groupIcon);
   groupElement.appendChild(groupName);
 
   groupElement.addEventListener('click', function () {
-    window.location.href = 'in_groups.html';
+    window.location.href = `in_groups.html?${groupName.innerHTML}`; 
   });
 
   return groupElement;

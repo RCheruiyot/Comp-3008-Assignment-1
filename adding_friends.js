@@ -1,6 +1,6 @@
 // Sample friend requests data
 const friendRequests = [
-  { username: 'GuyL', icon: 'path_to_icon.png' },
+  { username: 'Dud', icon: 'path_to_icon.png' },
   { username: 'Manbear', icon: 'path_to_icon.png' },
   { username: 'Trevor', icon: 'path_to_icon.png' },
 ];
