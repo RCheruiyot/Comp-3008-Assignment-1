@@ -35,6 +35,7 @@ searchInput.addEventListener('input', function () {
   }
 });
 
+
 function createFriendRequestElement(request) {
   const requestElement = document.createElement('li');
   requestElement.classList.add('request-item');
@@ -61,8 +62,23 @@ function createFriendRequestElement(request) {
   acceptButton.classList.add('accept');
   acceptButton.innerHTML = 'Accept';
   acceptButton.onclick = function () {
-    alert(`${request.username} has been added to your friends list`);
-    const index = friendRequests.findIndex(fr => fr.username === request.username);
+    const username = request.username;
+    const notification = document.getElementById('notification');
+    const notificationText = document.getElementById('notificationText');
+  
+    notificationText.textContent = `${username} has been added to your friends list`;
+    notification.style.display = 'block';
+    notification.style.padding = '10px';
+    notification.style.border = "3px black solid";
+    notification.style.borderRadius = "15px";
+  
+    // Hide the notification after 3 seconds (3000 milliseconds)
+    setTimeout(() => {
+      notification.style.padding = '0px';
+      notification.style.display = 'none';
+    }, 3000);
+  
+    const index = friendRequests.findIndex(fr => fr.username === username);
     friendRequests.splice(index, 1);
     displayFriendRequests();
   };
@@ -72,7 +88,7 @@ function createFriendRequestElement(request) {
   denyButton.classList.add('deny');
   denyButton.innerHTML = 'Deny';
   denyButton.onclick = function () {
-    alert(`${request.username}'s friend request has been denied`);
+    // alert(`${request.username}'s friend request has been denied`);
     const index = friendRequests.findIndex(fr => fr.username === request.username);
     friendRequests.splice(index, 1);
     displayFriendRequests();

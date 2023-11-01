@@ -10,6 +10,7 @@
   border-radius: 36px;
   overflow: hidden;
   background-color: #ffc89c;
+  z-index: 999;
 }
 
 .smartphone .content {
@@ -145,4 +146,20 @@ h2 {
 .back-button-link {
   text-decoration: none;
   color: black;
+}
+
+.relativeClass {
+  position: relative;
+}
+
+.notification {
+  position: absolute;
+  width: 93%;
+  padding: 0px;
+  background-color: #ffecdd;
+  /* border: 3px black solid;
+  border-radius: 15px; */
+  color: black;
+  text-align: center;
+  transition: top 0.5s;
 }
