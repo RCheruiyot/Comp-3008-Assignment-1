@@ -120,33 +120,14 @@ h2 {
   width: 0.2em;
 }
 
-.smartphone .content::-webkit-scrollbar-thumb {
-  background-color: #888;
-}
-
 .menu a {
-  text-decoration: none; /* Remove the default underline style for links */
-  color: #0074d9; /* Set the text color to #0074d9 */
+  text-decoration: none;
+  color: #0074d9;
 }
 
 .menu a:hover {
-  text-decoration: underline; /* Add underline on hover for links */
-  color: #0056b3; /* Change text color on hover to #0056b3 */
-}
-
-.menu {
-  background-color: #ffecdd !important;
-  border: 5px solid;
-  margin: auto;
-  width: 95%;
-  height: 30px;
-  float: left;
-  margin-left: -8px;
-  padding: 10px;
-  position: absolute;
-  bottom: 0;
-  z-index: 1;
-  overflow: hidden;
+  text-decoration: underline;
+  color: #0056b3;
 }
 
 .back-button {
