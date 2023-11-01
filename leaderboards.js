@@ -1,9 +1,10 @@
 // Sample leaderboard data
 const people = [
-    { name: 'Person 1', deadlift: 300, pushups: 50, pullups: 20, group: 'school' },
-    { name: 'Person 2', deadlift: 250, pushups: 60, pullups: 10, group: 'family' },
-    { name: 'Person 3', deadlift: 350, pushups: 40, pullups: 15, group: 'work' },
-    // Add more people here
+    { name: 'GuyL', deadlift: 300, pushups: 50, pullups: 20, group: 'school', image: 'assets/friend1.jpg' },
+    { name: 'GuyA', deadlift: 250, pushups: 60, pullups: 10, group: 'family', image: 'assets/friend2.jpg' },
+    { name: 'GuyB', deadlift: 350, pushups: 40, pullups: 15, group: 'work', image: 'assets/friend3.jpg' },
+    { name: 'GuyC', deadlift: 350, pushups: 40, pullups: 15, group: 'work', image: 'assets/friend4.jpg' },
+    // Add more people here with their respective images
 ];
 
 const exerciseFilter = document.getElementById('exercise-filter');
@@ -17,7 +18,7 @@ function createProfileElement(person) {
     const profile = document.createElement('div');
     profile.classList.add('leaderboards-profile');
     const profileImage = document.createElement('img');
-    profileImage.src = person.image; // Add the image URL for each person
+    profileImage.src = person.image; // Use the image property
     const profileInfo = document.createElement('div');
     profileInfo.classList.add('leaderboards-profile-info');
     profileInfo.innerHTML = `

@@ -10,6 +10,7 @@
   border-top-width: 60px;
   border-bottom-width: 60px;
   border-radius: 36px;
+  background-color: #ffc89c;
 }
 
 /* The horizontal line on the top of the device */
@@ -27,6 +28,7 @@
 }
 
 .personal-records-div {
+  background-color: #ffecdd;
   border: 5px solid;
   margin: auto;
   width: 70%;
@@ -42,8 +44,6 @@
 .add-workout {
   width: 70%;
   margin: 0 auto;
-  /* padding: 20px; */
-  margin-top: 0px;
   text-align: center;
 }
 
@@ -57,12 +57,14 @@
 }
 
 .menu{
+  /* background-color: white !important; */
+  background-color: #ffecdd;
   border: 5px solid;
   margin: auto;
   width: 95%;
   height: 30px;
   float: left;
-  margin-left: -8px;
+  margin-left: -6px;
   padding: 10px;
   margin-top: 50px;
   position: absolute;
@@ -89,4 +91,120 @@
 }
 .leaderboard{
   cursor: pointer;
+}
+
+/* #submit_pr {
+  display: block;
+  background-color: #0074d9;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px 15px;
+  text-decoration: none;
+  margin: 0 auto;
+  cursor: pointer;
+  width: 225px;
+}
+
+#submit_pr:hover {
+  background-color: #0056b3;
+} */
+
+#submit_pr {
+  display: block;
+  background-color: #0074d9;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px 15px;
+  text-decoration: none;
+  margin: 0 auto;
+  cursor: pointer;
+  width: 225px;
+}
+
+#submit_pr:hover {
+  background-color: #0056b3;
+}
+
+#submit_pr.disabled {
+  background-color: #aedff4; /* Light blue */
+  cursor: not-allowed; /* Change cursor to 'not-allowed' */
+  pointer-events: none; /* Disable pointer events */
+}
+
+.personal-record-h2 {
+  margin: 0;
+}
+
+
+
+/* Style the select dropdown for "Choose workout" */
+.add-workout select {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Style the personal record input box */
+.add-workout input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Style the button for choosing a file */
+.add-workout input[type="file"] {
+  display: none; /* Hide the default file input */
+}
+
+.add-workout label[for="fileInput"] {
+  display: block;
+  width: 80%;
+  padding: 10px;
+  background-color: #0074d9;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #0056b3;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-workout label[for="fileInput"]:hover {
+  background-color: #0056b3;
+}
+
+/* Customize the appearance of the chosen file */
+.add-workout .file-selected {
+  display: block;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  font-size: 16px;
+  color: #333;
+}
+
+.add-workout-h2 {
+  margin: 5px 0px;
+}
+
+.menu a {
+  text-decoration: none; /* Remove the default underline style for links */
+  color: #0074d9; /* Set the text color to #0074d9 */
+}
+
+.menu a:hover {
+  text-decoration: underline; /* Add underline on hover for links */
+  color: #0056b3; /* Change text color on hover to #0056b3 */
 }

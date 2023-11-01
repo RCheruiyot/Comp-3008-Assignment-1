@@ -24,6 +24,8 @@ searchInput.addEventListener('input', function () {
 function createFriendRequestElement(request) {
   const requestElement = document.createElement('li');
   requestElement.classList.add('request-item');
+  requestElement.style.backgroundColor = '#ffecdd';
+  requestElement.style.cursor = 'pointer';
 
   const userInfoDiv = document.createElement('div');
   userInfoDiv.classList.add('user-info');

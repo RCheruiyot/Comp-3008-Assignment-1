@@ -8,16 +8,18 @@
   border-bottom-width: 60px;
   border-radius: 36px;
   overflow: hidden;
+  background-color: #ffc89c;
 }
 
 .smartphone .content {
   width: 360px;
-  height: 500px;
+  height: 600px;
   background: white;
   position: relative;
   overflow: auto;
   padding: 20px;
   box-sizing: border-box;
+  background-color: #ffc89c;
 }
 
 h2 {
@@ -66,21 +68,6 @@ h2 {
   background-color: #0056b3;
 }
 
-.menu {
-  border: 5px solid;
-  margin: auto;
-  width: 95%;
-  height: 30px;
-  float: left;
-  margin-left: -8px;
-  padding: 10px;
-  position: absolute;
-  bottom: 0;
-  background: white;
-  z-index: 1;
-  overflow: hidden;
-}
-
 .profile_page {
   margin-top: -8px;
   margin-left: 70px;
@@ -111,4 +98,29 @@ h2 {
 
 .smartphone .content::-webkit-scrollbar-thumb {
   background-color: #888;
+}
+
+.menu a {
+  text-decoration: none; /* Remove the default underline style for links */
+  color: #0074d9; /* Set the text color to #0074d9 */
+}
+
+.menu a:hover {
+  text-decoration: underline; /* Add underline on hover for links */
+  color: #0056b3; /* Change text color on hover to #0056b3 */
+}
+
+.menu {
+  background-color: #ffecdd;
+  border: 5px solid;
+  margin: auto;
+  width: 95%;
+  height: 30px;
+  float: left;
+  margin-left: -8px;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  overflow: hidden;
 }

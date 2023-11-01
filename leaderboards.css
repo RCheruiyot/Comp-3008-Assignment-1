@@ -9,6 +9,7 @@
     border-top-width: 60px;
     border-bottom-width: 60px;
     border-radius: 36px;
+    background-color: #ffc89c;
   }
   
   /* The horizontal line on the top of the device */
@@ -27,7 +28,7 @@
 
 .smartphone .content {
     width: 360px;
-    height: 500px;
+    height: 600px;
     background: white;
     position: relative;
     overflow: auto; /* Add overflow: auto to enable scrolling for the content */
@@ -43,6 +44,7 @@
 }
 
   .menu {
+    background-color: #ffecdd !important;
     border: 5px solid;
     margin: auto;
     width: 95%;
@@ -52,7 +54,6 @@
     padding: 10px;
     position: absolute;
     bottom: 0;
-    background: white; /* Add a white background to the menu */
     z-index: 1; /* Ensure the menu appears above the leaderboard content */
     overflow: hidden; /* Hide menu overflow */
 }
@@ -111,17 +112,22 @@ h1 {
 }
 
 #leaderboards-filter-button {
-    padding: 5px;
-    margin: 10px 0;
+    display: block;
     background-color: #0074d9;
     color: #fff;
-    border: none;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-top: 30px;
     cursor: pointer;
+    width: 225px;
 }
 
 #leaderboards-filter-button:hover {
     background-color: #0056b3;
-}
+  }
 
 .leaderboards-leaderboard {
     display: flex;
@@ -138,6 +144,7 @@ h1 {
     margin: 10px;
     padding: 10px;
     text-align: left;
+    background-color: #ffecdd;
 }
 
 .leaderboards-profile img {
@@ -178,4 +185,46 @@ h1 {
 .colour-black:active {
     background-color: black;
     color: black;
+}
+
+.menu a {
+    text-decoration: none; /* Remove the default underline style for links */
+    color: #0074d9; /* Set the text color to #0074d9 */
+  }
+  
+  .menu a:hover {
+    text-decoration: underline; /* Add underline on hover for links */
+    color: #0056b3; /* Change text color on hover to #0056b3 */
+  }
+
+  .leaderboards-filter-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.leaderboards-filter-label {
+    margin: 0 10px 0 0; /* Adjust right margin for spacing */
+}
+
+.filter-label {
+    margin: 0 10px 0 0; /* Adjust right margin for spacing */
+}
+
+#exercise-filter {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #333;
+}
+
+#leaderboards-filter-group {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #333;
 }

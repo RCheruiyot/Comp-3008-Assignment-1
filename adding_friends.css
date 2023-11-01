@@ -9,16 +9,18 @@
   border-bottom-width: 60px;
   border-radius: 36px;
   overflow: hidden;
+  background-color: #ffc89c;
 }
 
 .smartphone .content {
   width: 360px;
-  height: 500px;
+  height: 600px;
   background: white;
   position: relative;
   overflow: auto;
   padding: 20px;
   box-sizing: border-box;
+  background-color: #ffc89c;
 }
 
 h2 {
@@ -120,4 +122,46 @@ h2 {
 
 .smartphone .content::-webkit-scrollbar-thumb {
   background-color: #888;
+}
+
+.menu a {
+  text-decoration: none; /* Remove the default underline style for links */
+  color: #0074d9; /* Set the text color to #0074d9 */
+}
+
+.menu a:hover {
+  text-decoration: underline; /* Add underline on hover for links */
+  color: #0056b3; /* Change text color on hover to #0056b3 */
+}
+
+.menu {
+  background-color: #ffecdd !important;
+  border: 5px solid;
+  margin: auto;
+  width: 95%;
+  height: 30px;
+  float: left;
+  margin-left: -8px;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.back-button {
+  background-color: #ffecdd;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 25px;
+  text-decoration: none;
+}
+
+
+.back-button-link {
+  text-decoration: none;
+  color: black;
 }

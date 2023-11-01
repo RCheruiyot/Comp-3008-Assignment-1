@@ -14,6 +14,8 @@ addFriendsButton.addEventListener('click', function () {
 function createGroupElement(group) {
   const groupElement = document.createElement('li');
   groupElement.classList.add('group-item');
+  groupElement.style.backgroundColor = '#ffecdd';
+  groupElement.style.cursor = 'pointer';
   const groupName = document.createElement('div');
   groupName.classList.add('group-name');
   groupName.innerHTML = group.groupName;

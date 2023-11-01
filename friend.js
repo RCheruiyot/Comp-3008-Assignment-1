@@ -31,6 +31,8 @@ fetch('./data.json')
     function createLiftElement(lift) {
         const liftElement = document.createElement('li');
         liftElement.classList.add('lift-item');
+        liftElement.style.backgroundColor = '#ffecdd';
+        liftElement.style.cursor = 'pointer';
         
         //Create the button with the dropdown
         const dropdownButton = document.createElement('button');

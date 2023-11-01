@@ -26,6 +26,8 @@ fetch('./data.json')
     function createFriendElement(friend) {
       const friendElement = document.createElement('li');
       friendElement.classList.add('friend-item');
+      friendElement.style.backgroundColor = '#ffecdd';
+      friendElement.style.cursor = 'pointer';
 
       const friendImage = new Image();
       friendImage.classList.add('friend-image');
