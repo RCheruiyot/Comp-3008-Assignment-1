@@ -3,7 +3,6 @@ const pr = document.getElementById('pr');
 const workout = document.getElementById('workouts');
 const proof = document.getElementById('fileInput');
 const displayPr = document.getElementById('personal-records');
-
 submitBtn.classList.add('disabled');
 
 pr.addEventListener('change', checkEnableButton);
@@ -92,7 +91,15 @@ function updateDisplayedRecords() {
       video.style.width = '100%';
       newDiv.appendChild(video);
     }
-
+      const removeDiv = document.createElement("button");
+      removeDiv.style.backgroundColor = "red"
+      removeDiv.style.color = "white";
+      removeDiv.innerHTML = "Remove"
+      removeDiv.onclick = ()=>{
+        newDiv.innerHTML = "";
+        delete personalRecords[workoutType];
+      }
+      newDiv.appendChild(removeDiv)
     newDiv.appendChild(document.createElement("br"));
     newDiv.appendChild(document.createElement("br"));
 
