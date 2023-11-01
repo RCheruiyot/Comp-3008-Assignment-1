@@ -17,6 +17,7 @@
     "GuyA": {
       "name": "GuyA",
       "lifts": {
+        "bench press": 120,
         "squat": 180,
         "deadlift": 220
       },

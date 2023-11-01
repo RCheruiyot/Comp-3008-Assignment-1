@@ -48,13 +48,11 @@ function displayPR() {
 
   // Check if the workout already has a record
   if (personalRecords[workoutType]) {
-    // Check if the new record is greater than the previous, and if so, update it
-    if (currentPR > personalRecords[workoutType].record) {
-      personalRecords[workoutType] = {
-        record: currentPR,
-        proof: proofURL
-      };
-    }
+    // Update the record whether it's higher or lower
+    personalRecords[workoutType] = {
+      record: currentPR,
+      proof: proofURL
+    };
   } else {
     personalRecords[workoutType] = {
       record: currentPR,
