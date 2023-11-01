@@ -1,7 +1,7 @@
 const groups = [
-  { groupName: 'School'},
-  { groupName: 'Family'},
-  { groupName: 'Work'},
+  { groupName: 'School' },
+  { groupName: 'Family' },
+  { groupName: 'Work' },
 ];
 
 const groupsList = document.getElementById('groups-list');
@@ -23,7 +23,7 @@ function createGroupElement(group) {
   groupElement.appendChild(groupName);
 
   groupElement.addEventListener('click', function () {
-    window.location.href = `in_groups.html?${groupName.innerHTML}`; 
+    window.location.href = `in_groups.html?${groupName.innerHTML}`;
   });
 
   return groupElement;
