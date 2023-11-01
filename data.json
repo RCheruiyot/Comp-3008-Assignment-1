@@ -8,9 +8,9 @@
     "GuyL": {
       "name": "GuyL",
       "lifts": {
-        "bench press": 150,
-        "squat": 200,
-        "deadlift": 250
+        "bench press": 225,
+        "squat": 190,
+        "deadlift": 200
       },
       "profilePicture": "assets/friend1.jpg"
     },
@@ -19,7 +19,7 @@
       "lifts": {
         "bench press": 120,
         "squat": 180,
-        "deadlift": 220
+        "deadlift": 250
       },
       "profilePicture": "assets/friend2.jpg"
     },
@@ -28,7 +28,7 @@
       "lifts": {
         "bench press": 160,
         "squat": 210,
-        "deadlift": 260
+        "deadlift": 180
       },
       "profilePicture": "assets/friend3.jpg"
     },
@@ -36,8 +36,8 @@
       "name": "GuyC",
       "lifts": {
         "bench press": 140,
-        "squat": 190,
-        "deadlift": 230
+        "squat": 200,
+        "deadlift": 260
       },
       "profilePicture": "assets/friend4.jpg"
     }
